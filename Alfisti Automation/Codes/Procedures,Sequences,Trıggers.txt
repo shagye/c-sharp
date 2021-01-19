@@ -1,0 +1,174 @@
+
+_______________________STORED PURACEDURES_________________________________
+
+create or replace NONEDITIONABLE PROCEDURE gl_arac_teslim_etme
+(
+in_carsno     IN cars.carsno%TYPE
+)
+as 
+begin
+UPDATE CARS SET carsNo=in_carsno  , RBStatus = 'Kiralık' where carsNo = in_carsno;
+DELETE FROM CARSRENTAL where carsNo= in_carsno;
+end;
+
+___________________________________________________________________________
+create or replace NONEDITIONABLE PROCEDURE gl_cars_delete 
+(
+carsNoo     IN cars.carsNo%TYPE
+)
+as 
+begin
+delete from CARS where carsNo=carsNoo;
+end;
+___________________________________________________________________________
+
+create or replace NONEDITIONABLE PROCEDURE gl_client_add 
+(
+fname     IN client.fname%TYPE,
+lname  IN client.lname%TYPE,
+ctel  IN client.ctel%TYPE,
+city   IN client.ccity%TYPE,
+age   IN client.age%TYPE,
+money    IN client.cmoney%TYPE,
+username           IN client.username%TYPE,
+ppassword      IN client.password%TYPE
+
+)
+as 
+begin
+insert into Client (fName,lName,cTel,cCity,age,cMoney,username,password) values
+(fname,lname,ctel,city,age,money,username,ppassword) ;
+end;
+___________________________________________________________________________
+
+create or replace NONEDITIONABLE PROCEDURE return_client_id
+(
+  in_username IN client.username%Type,
+  in_password IN client.password%TYPE,
+  clientID out client.clientid%TYPE,
+  ret_fname out client.fname%TYPE,
+  ret_lname out client.lname%TYPE
+) 
+AS 
+BEGIN
+    select clientID,fname,lname 
+    into clientID, ret_fname,ret_lname
+    from Client
+    where (username = in_username and password=in_password);
+    EXCEPTION WHEN NO_DATA_FOUND THEN
+     ret_fname := null;
+     ret_lname := null;
+     clientID   := null;
+END;
+
+___________________________________________________________________________
+
+create or replace NONEDITIONABLE PROCEDURE return_staff_id
+(
+  in_username IN staff.username%Type,
+  in_password IN staff.password%TYPE,
+  staffID out staff.staffid%TYPE,
+  ret_fname out staff.fname%TYPE,
+  ret_lname out staff.lname%TYPE
+) 
+AS 
+BEGIN
+    select staffID,fname,lname 
+    into staffID, ret_fname,ret_lname
+    from STAFF
+    where (username = in_username and password=in_password);
+    EXCEPTION WHEN NO_DATA_FOUND THEN
+     ret_fname := null;
+     ret_lname := null;
+     staffID   := null;
+END;
+____________________________SEQUENCES______________________________________
+
+CREATE SEQUENCE CARS_CARSNO
+START WITH 1
+INCREMENT BY 1 ;
+
+CREATE SEQUENCE CLIENT_CLIENTID
+START WITH 1
+INCREMENT BY 1 ;
+
+
+CREATE SEQUENCE STAFF_STAFFID
+START WITH 1
+INCREMENT BY 1 ;
+
+
+CREATE SEQUENCE RENTAL_RENTALNO
+START WITH 1
+INCREMENT BY 1 ;
+
+
+CREATE SEQUENCE PURCHASE_PURCHASENO
+START WITH 1
+INCREMENT BY 1 ;
+____________________________TRIGGERS______________________________________
+
+
+create or replace  TRIGGER carsadd_trigger
+BEFORE INSERT
+ON CARS
+REFERENCING NEW AS NEW
+FOR EACH ROW
+BEGIN
+SELECT CARS_CARSNO_sequence.nextval INTO :NEW.carsNo FROM dual;
+END;
+
+
+CREATE OR REPLACE  TRIGGER clientadd_trigger
+BEFORE INSERT
+ON CLIENT
+REFERENCING NEW AS NEW
+FOR EACH ROW
+BEGIN
+SELECT CLIENT_CLIENTID.nextval INTO :NEW.ClientID FROM dual;
+END;
+
+
+CREATE OR REPLACE  TRIGGER staffadd_trigger
+BEFORE INSERT
+ON STAFF
+REFERENCING NEW AS NEW
+FOR EACH ROW
+BEGIN
+SELECT STAFF_STAFFID.nextval INTO :NEW.staffID FROM dual;
+END;
+
+CREATE OR REPLACE TRIGGER r_trig_lastupdate
+BEFORE INSERT OR UPDATE 
+ON CARSRENTAL
+FOR EACH ROW
+BEGIN 
+    :new.Last_Update :=sysdate;
+END;  
+
+
+CREATE OR REPLACE  TRIGGER rental_trigger
+BEFORE INSERT
+ON CARSRENTAL
+REFERENCING NEW AS NEW
+FOR EACH ROW
+BEGIN
+SELECT RENTAL_RENTALNO.nextval INTO :NEW.RentalNo FROM dual;
+END;
+
+CREATE OR REPLACE TRIGGER p_trig_lastupdate
+BEFORE INSERT OR UPDATE 
+ON CARSPURCHASE
+FOR EACH ROW
+BEGIN 
+    :new.Last_Update :=sysdate;
+END;
+
+CREATE OR REPLACE  TRIGGER purchase_trigger
+BEFORE INSERT
+ON CARSPURCHASE
+REFERENCING NEW AS NEW
+FOR EACH ROW
+BEGIN
+SELECT PURCHASE_PURCHASENO.nextval INTO :NEW.PurchaseNo FROM dual;
+END;

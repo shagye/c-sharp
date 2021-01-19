@@ -1,0 +1,8 @@
+C:\Users\onura\source\repos\proje\Galeri.Entities\bin\Debug\Galeri.Entities.dll
+C:\Users\onura\source\repos\proje\Galeri.Entities\bin\Debug\Galeri.Entities.pdb
+C:\Users\onura\source\repos\proje\Galeri.Entities\obj\Debug\Galeri.Entities.csproj.CoreCompileInputs.cache
+C:\Users\onura\source\repos\proje\Galeri.Entities\obj\Debug\Galeri.Entities.dll
+C:\Users\onura\source\repos\proje\Galeri.Entities\obj\Debug\Galeri.Entities.pdb
+C:\Users\onura\source\repos\proje\Galeri.Entities\obj\Debug\Galeri.Entities.csprojAssemblyReference.cache
+C:\Users\onura\source\repos\proje\Galeri.Entities\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\onura\source\repos\proje\Galeri.Entities\obj\Debug\Galeri.Entities.csproj.CopyComplete

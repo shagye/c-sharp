@@ -1,0 +1,17 @@
+C:\Users\onura\source\repos\proje\Galeri.DatabaseLogicLayer\bin\Debug\Galeri.DatabaseLogicLayer.dll
+C:\Users\onura\source\repos\proje\Galeri.DatabaseLogicLayer\bin\Debug\Galeri.DatabaseLogicLayer.pdb
+C:\Users\onura\source\repos\proje\Galeri.DatabaseLogicLayer\obj\Debug\Galeri.DatabaseLogicLayer.csprojAssemblyReference.cache
+C:\Users\onura\source\repos\proje\Galeri.DatabaseLogicLayer\obj\Debug\Galeri.DatabaseLogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\onura\source\repos\proje\Galeri.DatabaseLogicLayer\obj\Debug\Galeri.DatabaseLogicLayer.dll
+C:\Users\onura\source\repos\proje\Galeri.DatabaseLogicLayer\obj\Debug\Galeri.DatabaseLogicLayer.pdb
+C:\Users\onura\source\repos\proje\Galeri.DatabaseLogicLayer\bin\Debug\Oracle.DataAccess.dll
+C:\Users\onura\source\repos\proje\Galeri.DatabaseLogicLayer\bin\Debug\Oracle.DataAccess.EntityFramework.dll
+C:\Users\onura\source\repos\proje\Galeri.DatabaseLogicLayer\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\onura\source\repos\proje\Galeri.DatabaseLogicLayer\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\onura\source\repos\proje\Galeri.DatabaseLogicLayer\bin\Debug\Oracle.VsDevTools.EntityFramework.16.0.dll
+C:\Users\onura\source\repos\proje\Galeri.DatabaseLogicLayer\bin\Debug\Oracle.Web.dll
+C:\Users\onura\source\repos\proje\Galeri.DatabaseLogicLayer\obj\Debug\Galeri.DatabaseLogicLayer.csproj.CopyComplete
+C:\Users\onura\source\repos\proje\Galeri.DatabaseLogicLayer\bin\Debug\Galeri.Entities.dll
+C:\Users\onura\source\repos\proje\Galeri.DatabaseLogicLayer\bin\Debug\Galeri.Entities.pdb
+C:\Users\onura\source\repos\proje\Galeri.DatabaseLogicLayer\bin\Debug\Dapper.dll
+C:\Users\onura\source\repos\proje\Galeri.DatabaseLogicLayer\bin\Debug\Dapper.xml

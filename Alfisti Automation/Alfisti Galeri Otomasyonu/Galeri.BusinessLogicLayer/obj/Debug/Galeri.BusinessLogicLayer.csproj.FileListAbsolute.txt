@@ -1,0 +1,12 @@
+C:\Users\onura\source\repos\proje\Galeri.BusinessLogicLayer\bin\Debug\Galeri.BusinessLogicLayer.dll
+C:\Users\onura\source\repos\proje\Galeri.BusinessLogicLayer\bin\Debug\Galeri.BusinessLogicLayer.pdb
+C:\Users\onura\source\repos\proje\Galeri.BusinessLogicLayer\bin\Debug\Galeri.DatabaseLogicLayer.dll
+C:\Users\onura\source\repos\proje\Galeri.BusinessLogicLayer\bin\Debug\Galeri.Entities.dll
+C:\Users\onura\source\repos\proje\Galeri.BusinessLogicLayer\bin\Debug\Galeri.DatabaseLogicLayer.pdb
+C:\Users\onura\source\repos\proje\Galeri.BusinessLogicLayer\bin\Debug\Galeri.Entities.pdb
+C:\Users\onura\source\repos\proje\Galeri.BusinessLogicLayer\obj\Debug\Galeri.BusinessLogicLayer.csprojAssemblyReference.cache
+C:\Users\onura\source\repos\proje\Galeri.BusinessLogicLayer\obj\Debug\Galeri.BusinessLogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\onura\source\repos\proje\Galeri.BusinessLogicLayer\obj\Debug\Galeri.BusinessLogicLayer.csproj.CopyComplete
+C:\Users\onura\source\repos\proje\Galeri.BusinessLogicLayer\obj\Debug\Galeri.BusinessLogicLayer.dll
+C:\Users\onura\source\repos\proje\Galeri.BusinessLogicLayer\obj\Debug\Galeri.BusinessLogicLayer.pdb
+C:\Users\onura\source\repos\proje\Galeri.BusinessLogicLayer\bin\Debug\Oracle.ManagedDataAccess.dll
